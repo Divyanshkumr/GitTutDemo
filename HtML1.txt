@@ -1,0 +1,173 @@
+                                       HTMl 5
+
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the document
+The <title> element specifies a title for the document
+The <body> element contains the visible page content
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+  
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<br> is an empty element without a closing tag (the <br> tag defines a line break)
+
+The style attribute is used to specify the styling of an element, like color, font, size etc.(Paragraph Tag)
+<p style="color:red">This is a red paragraph.</p>
+ 
+Declaring a language is important for accessibility applications (screen readers) and search engines.
+<html lang="en-US">
+
+<p title="I'm a tooltip">
+This is a paragraph.
+</p>
+
+<h1 style="font-size:60px;">Heading 1</h1>(CSS PROPERTY)
+
+<hr>--- used to draw horizontal rule
+
+The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph
+
+The HTML <pre> element defines preformatted text.
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+ 
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value.
+
+The CSS background-color property defines the background color for an HTML element.
+ ex:---    <body style="background-color:powderblue;">
+
+The CSS font-family property defines the font to be used for an HTML element:
+Example
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+The CSS font-size property defines the text size for an HTML element:
+Example
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+Example
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+HTML Formatting Elements
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+<q>-for quotations(<blockquote cite>)
+
+The HTML <abbr> element defines an abbreviation or an acronym.
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+Example
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+The HTML <address> element defines contact information (author/owner) of a document or an article.
+
+The HTML <cite> element defines the title of a work.Browsers usually display <cite> elements in italic.
+
+The HTML <bdo> element defines bi-directional override.
+The <bdo> element is used to override the current text direction:
+Example
+<bdo dir="rtl">This text will be written from right to left</bdo>
+    
+Tag	Description
+<abbr>	Defines an abbreviation or acronym
+<address>	Defines contact information for the author/owner of a document
+<bdo>	Defines the text direction
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work
+<q>	Defines a short inline quotation
+
+Border Color:
+EXAMPLE
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+
+Color Values
+In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+Same as color name "Tomato":
+rgb(255, 99, 71,0.5)
+
+HEX Value
+In HTML, a color can be specified using a hexadecimal value in the form:
+#rrggbb
+
+CSS can be added to HTML elements in 3 ways:
+       Inline - by using the style attribute in HTML elements-------->by using style attributes and its properties
+       Internal - by using a <style> element in the <head> section-------->by using styles tag in our html file
+       External - by using an external CSS file  ------>   by linking an external CSS file in <head>
+
+
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+
+HTML Links - The target Attribute
+     The target attribute specifies where to open the linked document.
+     The target attribute can have one of the following values:
+     _blank - Opens the linked document in a new window or tab
+     _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+     _parent - Opens the linked document in the parent frame
+     _top - Opens the linked document in the full body of the window
+     framename - Opens the linked document in a named frame
+
+Link Buttons
+A link can also be styled as a button, by using CSS:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+
+</body>
+</html>
+
+Image Floating
+Use the CSS float property to let the image float to the right or to the left of a text:
+Example
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
